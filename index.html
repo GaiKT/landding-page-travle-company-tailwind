@@ -6,15 +6,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>travel company</title>
 </head>
-<body>
+<body class="max-md:px-2">
     <!-- start Hero -->
     <section class="relative">
         <div class="bg-[url('/img/BG.png')] mb-52">
             <div class="w-full h-full bg-gradient-to-r from-[#FCFEFFCC] to-[#FFFFFF]">
             <!-- start nav-bar -->
-            <nav class="h-32 flex justify-around items-center z-10">
+            <nav class="h-32 flex justify-around items-center z-10 max-md:justify-between max-md:p-4">
                 <span class="font-extrabold text-5xl">Tripp <span class="font-extrabold text-5xl text-orange-500">.</span></span>
-                <ul class="flex gap-14 text-gray-400">
+                <ul class="flex gap-14 text-gray-400 max-md:hidden">
                     <li class="border border-white hover:text-red-950 hover:border-b-orange-500">
                         <a href="#">Home</a>
                     </li>
@@ -28,20 +28,25 @@
                         <a href="#">Tour Packge</a>
                     </li>
                 </ul>
-                <button class="bg-gradient-to-t from-[#FE7A49] to-[#FE5C3E] w-44 h-16 rounded-xl text-white hover:shadow-xl">
+                <button class="bg-gradient-to-t from-[#FE7A49] to-[#FE5C3E] w-44 h-16 rounded-xl text-white hover:shadow-xl max-md:hidden">
                     Contact Us
                 </button>
+                <div class="hidden max-md:block">
+                    <button>
+                        <img src="/img/resbar.png" alt="responbar">
+                    </button>
+                </div>
             </nav>
             <!-- end nav-bar -->
-            <div class="flex pb-44">
-                <div class="flex-1 flex justify-center items-center">
+            <div class="flex pb-44 max-lg:flex-col-reverse">
+                <div class="flex-1 flex justify-center items-center max-lg:justify-start max-lg:px-10 max-lg:mb-56">
                     <div class="w-80">
                         <h1 class="text-6xl font-extrabold mb-5">Fuel Mind by travel</h1>
                         <p class="text-sm">Enthusiastically extend extensive customer service before best breed convergence completely.</p>
                     </div>
                 </div>
-                <div class="flex-1">
-                    <div class="w-[500px] h-[500px] rounded-full bg-gradient-to-t from-[#FE7A49] to-[#FE5C3E] mt-10 ml-10 flex flex-col justify-around py-16 relative">
+                <div class="flex-1 flex max-lg:justify-center max-lg:mb-10">
+                    <div class="w-[500px] h-[500px] rounded-full bg-gradient-to-t from-[#FE7A49] to-[#FE5C3E] mt-10 ml-10 flex flex-col justify-around py-16 relative max-lg:hidden">
                         <img src="./img/Vector.png" alt="">
                         <img src="./img/Vector (1).png" alt="">
                         <img src="./img/Vector (2).png" alt="">
@@ -53,13 +58,25 @@
                             <img src="/img/Group 5817.png" alt="">
                         </div>
                     </div>
+                    <div class="w-[300px] h-[300px] rounded-full bg-gradient-to-t from-[#FE7A49] to-[#FE5C3E] max-lg:flex flex-col justify-around py-16 relative hidden">
+                        <img src="./img/Vector.png" alt="">
+                        <img src="./img/Vector (1).png" alt="">
+                        <img src="./img/Vector (2).png" alt="">
+                        <img src="./img/Vector (3).png" alt="">
+                        <img src="./img/Vector (4).png" alt="">
+                        <img src="./img/Vector (5).png" alt="">
+                        <div class="h-24 w-20 p-2 flex flex-col bg-white items-center justify-around rounded-md absolute left-[-95px] max-lg:left-[-45px] top-1/4 shadow-md ">  
+                            <div class="h-10 w-16 bg-gray-500 rounded-md"></div>
+                            <img src="/img/Group 5817.png" alt="" width="57" height="28">
+                        </div>
+                    </div>
                 </div>
             </div>
             </div>
         </div>
-        <div class="w-2/4 h-36 absolute bottom-[-65px] left-1/4 bg-white rounded-xl shadow-md flex flex-row justify-between px-6 items-center">
+        <div class="w-2/4 max-md:w-full absolute bottom-[-65px] md:left-1/4 bg-white rounded-xl shadow-md flex flex-row md:h-32 max-md:flex-col justify-between px-6 items-center max-md:py-10">
             <div class="w-4/6">
-                <table class="table text-left ml-4 w-full">
+                <table class="table text-left ml-4 w-full max-md:hidden">
                     <thead class="text-gray-400">
                       <tr>
                         <th>Location</th>
@@ -74,7 +91,15 @@
                         <td>$300 - $600</td>
                       </tr>
                     </tbody>
-                  </table>
+                </table>
+                <div class="max-md:flex max-md:flex-col items-center mb-5 h-52 justify-around font-bold hidden">
+                    <p class="text-gray-500">Location</p>
+                    <p class=" text-black">Cox's Bazar</p>
+                    <p class="text-gray-500">Date</p>
+                    <p class=" text-black">Mon, 14 Mar - Thu, 17 Mar</p>
+                    <p class="text-gray-500">Avg.price</p>
+                    <p class=" text-black">$300 - $600</p>
+                </div>
             </div>
             <button class="bg-gradient-to-t from-[#FE7A49] to-[#FE5C3E] w-44 h-16 rounded-xl text-white hover:shadow-xl">
                 Explore &#8594;
@@ -85,31 +110,31 @@
 
     <!-- start categories -->
     <section class="w-full flex justify-center items-center mt-16 py-8">
-        <div class="w-full flex flex-col justify-center relative">
-            <h1 class="font-extrabold text-4xl w-96 ml-20">Start Your Vacation with Lost of Services!</h1>
-            <div class="mt-12 flex justify-center items-center gap-6 flex-row flex-wrap">
-                <div class="w-72 h-[270px] flex flex-col justify-center items-center rounded-xl border hover:shadow-lg hover:border-white">
+        <div class="w-full flex flex-col justify-center items-center max-md:justify-between relative">
+            <h1 class="font-extrabold text-4xl w-96 md:ml-20 max-md:w-64">Start Your Vacation with Lost of Services!</h1>
+            <div class="mt-12 flex justify-center items-center gap-6 flex-row max-md:flex-col flex-wrap">
+                <div class="w-72 h-[270px] max-md:w-full flex flex-col justify-center items-center rounded-xl border hover:shadow-lg hover:border-white">
                     <div class="w-[80px] h-[80px] bg-[#FE5B3E1A] rounded-lg flex justify-center items-center mb-8">
                         <img src="./img/family (2) 1.png" alt="">
                     </div>
-                    <p class="font-bold text-lg">Family Vacations</p>
+                    <p class="font-bold text-lg max-md:text-4xl">Family Vacations</p>
                     <p>155 Properties</p>
                 </div>
-                <div class="w-72 h-[270px] flex flex-col justify-center items-center rounded-xl border hover:shadow-lg hover:border-white">
+                <div class="w-72 h-[270px] flex flex-col justify-center items-center rounded-xl border hover:shadow-lg hover:border-white max-md:hidden">
                     <div class="w-[80px] h-[80px] bg-[#FE5B3E1A] rounded-lg flex justify-center items-center mb-8">
                         <img src="./img/scuba-diving 1.png" alt="">
                     </div>
                     <p class="font-bold text-lg">Scuba Diving</p>
                     <p>143 Properties</p>
                 </div>
-                <div class="w-72 h-[270px] flex flex-col justify-center items-center rounded-xl border hover:shadow-lg hover:border-white">
+                <div class="w-72 h-[270px] flex flex-col justify-center items-center rounded-xl border hover:shadow-lg hover:border-white max-md:hidden">
                     <div class="w-[80px] h-[80px] bg-[#FE5B3E1A] rounded-lg flex justify-center items-center mb-8">
                         <img src="./img/deer-facing-right 1.png" alt="">
                     </div>
                     <p class="font-bold text-lg">Hunting Trip</p>
                     <p>122 Properties</p>
                 </div>
-                <div class="w-72 h-[270px] flex flex-col justify-center items-center rounded-xl border hover:shadow-lg hover:border-white">
+                <div class="w-72 h-[270px] flex flex-col justify-center items-center rounded-xl border hover:shadow-lg hover:border-white max-md:hidden">
                     <div class="w-[80px] h-[80px] bg-[#FE5B3E1A] rounded-lg flex justify-center items-center mb-8">
                         <img src="./img/mountain-bike 1.png" alt="">
                     </div>
@@ -127,9 +152,9 @@
     <!-- start package -->
     <section class="w-full flex flex-col justify-center items-center my-28">
         <h1 class="font-extrabold text-4xl mb-20">Our Upcoming Tour Package</h1>   
-        <div class="w-4/5  flex justify-center items-center gap-4"> 
-            <div class="mt-20">
-                <div class="w-[450px] h-[520px] bg-gray-400 rounded-lg relative">
+        <div class="w-4/5 max-md:w5/  md:flex justify-center items-center md:gap-4"> 
+            <div class="mt-20 max-md:mt-0">
+                <div class="w-[450px] max-md:w-full h-[520px] bg-gray-400 rounded-lg relative">
                     <span class="absolute right-4 top-4 text-white font-bold">$599</span>
                 </div>
                 <div class="flex justify-between items-center m-4">
@@ -151,7 +176,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="max-md:hidden">
                 <div class="w-[450px] h-[520px] bg-gray-400 rounded-lg relative">
                     <span class="absolute right-4 top-4 text-white font-bold">$430</span>
                 </div>
@@ -174,7 +199,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-20">
+            <div class="mt-20 max-md:hidden">
                 <div class="w-[450px] h-[520px] bg-gray-400 rounded-lg relative">
                     <span class="absolute right-4 top-4 text-white font-bold">$550</span>
                 </div>
@@ -206,9 +231,9 @@
     <!-- end package -->
 
     <!-- start popular -->
-    <section class="flex flex-row bg-[#FEF9F3] py-40">
+    <section class="flex flex-row max-md:flex-col-reverse bg-[#FEF9F3] md:py-40 max-md:py-10">
         <div class="flex-1 relative">
-            <div class="flex gap-4 relative left-[-78px]">
+            <div class="flex gap-4 relative left-[-78px] max-md:left-0 max-md:justify-center">
                 <div class="w-[332px] h-[450px] bg-gray-400 rounded-lg flex items-end p-4 mt-10">
                     <div class="w-full flex justify-between items-center text-white ">
                         <div>
@@ -221,7 +246,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-[332px] h-[450px] bg-gray-400 rounded-lg flex items-end p-4">
+                <div class="w-[332px] h-[450px] bg-gray-400 rounded-lg flex items-end p-4 max-md:hidden">
                     <div class="w-full flex justify-between items-center text-white">
                         <div>
                             <p class="font-bold">Lake Powell</p>
@@ -233,7 +258,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-[332px] h-[450px] bg-gray-400 rounded-lg flex items-end p-4 mt-10">
+                <div class="w-[332px] h-[450px] bg-gray-400 rounded-lg flex items-end p-4 mt-10 max-md:hidden">
                     <div class="w-full flex justify-between items-center text-white">
                         <div>
                             <p class="font-bold">Deep Creek Lake</p>
@@ -246,17 +271,24 @@
                     </div>
                 </div>
             </div>
-            <div class="w-40 h-10 flex justify-around items-center absolute left-1/3 font-extralight">
+            <div class="w-40 h-10 flex justify-around items-center absolute left-1/3 font-extralight max-md:hidden">
                 <a href="#" class="text-orange-500 text-5xl hover:text-6xl hover:font-bold">&#8592;</a>
                 <a href="#" class="text-orange-500 text-5xl hover:text-6xl hover:font-bold">&#8594;</a>
+            </div>
+            
+            <!-- responsive botton -->
+            <div class="w-40 h-10 max-md:flex justify-around items-center absolute left-1/3 mt-5 hidden">
+                <a href="#" class="w-8 h-8 bg-gray-300 rounded-full"></a>
+                <a href="#" class="w-8 h-8 bg-gray-300 border border-orange-500 rounded-full relative flex justify-center items-center"><span class="w-4 h-4 bg-orange-500 rounded-full absolute"></span></a>
+                <a href="#" class="w-8 h-8 bg-gray-300 rounded-full"></a>
             </div>
         </div>
         <div class="flex-1 flex justify-center items-center">
             <div class="flex justify-center items-center text-start">
-                <div class="w-full">
-                    <h1 class="text-4xl font-extrabold mb-5">Most Popular <br>
+                <div class="w-full max-md:flex justify-center max-md:flex-col items-center">
+                    <h1 class="text-4xl font-extrabold mb-5 w-full">Most Popular <br>
                         Destination of Us!</h1>
-                    <p class="text-sm ">Credibly unleash economically sound e-business with bleeding-edge users. Uniquely simplify mission-critical benefits with cross-unit manufactured products. Energistically re-engineer </p>
+                    <p class="text-lg text-gray-400">Credibly unleash economically sound e-business with bleeding-edge users. Uniquely simplify mission-critical benefits with cross-unit manufactured products. Energistically re-engineer </p>
                     <button class="bg-gradient-to-t from-[#FE7A49] to-[#FE5C3E] w-44 h-16 rounded-xl text-white mt-5 hover:shadow-xl">
                         View All &#8594;
                     </button>
@@ -267,9 +299,9 @@
     <!-- end popular -->
 
     <!-- start feedback -->
-    <section class="flex py-40 justify-center items-center">
-        <div class="flex flex-row w-4/5 gap-10 p-10">
-            <div class="p-4 rounded-full border">
+    <section class="flex py-40 max-md:py-20 justify-center items-center ">
+        <div class="flex flex-row md:w-4/5 md:gap-10 md:p-10 max-md:flex-col max-md:w-[330px]">
+            <div class="p-4 rounded-full border max-md:hidden">
                 <div class="mt-5 ml-5 w-[500px] h-[500px] rounded-full bg-gradient-to-t from-[#FE7A49] to-[#FE5C3E] flex flex-col justify-around py-16 relative">
                     <img src="./img/Vector.png" alt="">
                     <img src="./img/Vector (1).png" alt="">
@@ -279,13 +311,23 @@
                     <img src="./img/Vector (5).png" alt="">
                 </div>
             </div>
-            <div class="flex justify-center items-center">
-                <div class="flex justify-center items-center text-start relative ml-10">
+            <div class="p-4 rounded-full border hidden mb-5 max-md:block">
+                <div class="w-[300px] h-[300px] rounded-full bg-gradient-to-t from-[#FE7A49] to-[#FE5C3E] max-lg:flex flex-col justify-around py-16 relative hidden">
+                    <img src="./img/Vector.png" alt="">
+                    <img src="./img/Vector (1).png" alt="">
+                    <img src="./img/Vector (2).png" alt="">
+                    <img src="./img/Vector (3).png" alt="">
+                    <img src="./img/Vector (4).png" alt="">
+                    <img src="./img/Vector (5).png" alt="">
+                </div>
+            </div>
+            <div class="flex justify-center items-center mb-20">
+                <div class="flex justify-center items-center text-start relative md:ml-10">
                     <div class="w-full">
                         <h1 class="text-4xl font-extrabold mb-5">Feedback from <br> Our Customers</h1>
-                        <p class="text-md font-bold pb-4">“I’ve  Went ot America from Tripp Play  about 1 years ago. Tripp make the prototyping process so easy and faster. I feel this is the best apps for Prototyping use”</p>
+                        <p class="text-lg font-bold pb-4">“I’ve  Went ot America from Tripp Play  about 1 years ago. Tripp make the prototyping process so easy and faster. I feel this is the best apps for Prototyping use”</p>
                         <p>— Ferdous - CEO of Coco</p>
-                        <div class="w-32 h-10 flex justify-around items-center absolute left-0 mt-5 font-bold text-2xl"> 
+                        <div class="w-32 h-10 flex justify-around items-center absolute left-0 m-5 font-bold text-2xl"> 
                             <a href="#" class="btn btn-circle w-10 h-10 bg-orange-300 hover:bg-orange-500 text-white flex justify-center items-center rounded-full">&#8592;</a>
                             <a href="#" class="btn btn-circle w-10 h-10 bg-orange-300 hover:bg-orange-500 text-white flex justify-center items-center rounded-full">&#8594;</a>
                         </div>
@@ -298,10 +340,10 @@
 
     <!-- start top visit -->
     <section class="flex flex-col w-full justify-center items-center">
-        <h1 class="text-4xl font-extrabold mb-5">World Top Visiting Place in 2021</h1>
-        <div class="w-5/6 h-[743px] mt-10 relative">
+        <h1 class="text-4xl font-extrabold mb-5 max-md:text-center">World Top Visiting Place in 2021</h1>
+        <div class="w-5/6 mt-10 relative">
             <img src="/img/Map.png" alt="wold map">
-            <div class="w-32 h-52 flex flex-col justify-around items-center absolute top-52 left-44">
+            <div class="w-32 h-52 flex flex-col justify-around items-center absolute top-20 left-32 max-md:hidden">
                 <div class="p-2 bg-white rounded-full shadow-2xl">
                     <img src="/img/flag3.png" alt="Mexico">
                 </div>
@@ -310,7 +352,7 @@
                     <p>O3 Tour</p>
                 </div>
             </div>
-            <div class="w-32 h-52 flex flex-col justify-around items-center absolute top-1/4 left-2/4 ">
+            <div class="w-32 h-52 flex flex-col justify-around items-center absolute top-1/4 mt-16 left-1/4 ml-40 max-md:hidden">
                 <div class="p-2 bg-white rounded-full shadow-2xl">
                     <img src="/img/flag2.png" alt="France">
                 </div>
@@ -319,7 +361,7 @@
                     <p>O3 Tour</p>
                 </div>
             </div>
-            <div class="w-32 h-52 flex flex-col justify-around items-center absolute bottom-40 right-32">
+            <div class="w-32 h-52 flex flex-col justify-around items-center absolute bottom-0 right-24 max-md:hidden">
                 <div class="p-2 bg-white rounded-full shadow-2xl">
                     <img src="/img/flag1.png" alt="Australia">
                 </div>
@@ -328,32 +370,43 @@
                     <p>O2 Tour</p>
                 </div>
             </div>
+            
+            <!-- flag responsive -->
+            <div class="hidden w-7 h-7 max-md:block absolute top-16 left-14 ">
+                <img src="/img/flag3.png" alt="">
+            </div >
+            <div class="hidden w-7 h-7 max-md:block absolute top-28 left-56 ">
+                <img src="/img/flag2.png" alt="">
+            </div>
+            <div class="hidden w-7 h-7 max-md:block absolute bottom-7 right-16">
+                <img src="/img/flag1.png" alt="">
+            </div>
         </div>
         
     </section>
     <!-- end top visit -->
 
-    <!-- start top visit -->
+    <!-- start footer -->
     <section class="relative">
         <div class="bg-[url('/img/Rectangle.png')]">
             <div class="w-full h-full bg-gradient-to-t from-[#FCFEFFCC] to-[#FFFFFF] flex">
-                <div class="flex-1 flex flex-col items-start justify-around h-96 my-40 ml-40 w-full">
-                    <p class="text-4xl font-bold">
+                <div class="md:flex-1 flex flex-col items-start justify-around h-96 max-md:mt-40 md:mt-20 md:mb-10 md:ml-40 w-full">
+                    <p class="text-4xl font-bold mb-5">
                         Subscribe <br>
                         for every Tour <br>
                         News & Tips <br>
                     </p>
-                    <div class="bg-white p-2 rounded-3xl shadow-xl">
-                        <input type="email" placeholder="Enter Your Email" class="mx-10"/>
-                        <button class="bg-gradient-to-t from-[#FE7A49] to-[#FE5C3E] w-44 h-16 rounded-xl text-white hover:shadow-xl">
+                    <div class="bg-white p-2 rounded-3xl shadow-xl mb-5 max-md:flex">
+                        <input type="email" placeholder="Enter Your Email" class="mx-10 max-md:flex-1"/>
+                        <button class="max-md:flex-1 bg-gradient-to-t from-[#FE7A49] to-[#FE5C3E] w-44 h-16 rounded-xl text-white hover:shadow-xl">
                             Subscribe &#8594;
                         </button>
                     </div>
-                    <div class="flex w-2/3 justify-between">
+                    <div class="flex w-2/3 justify-between mb-20 max-md:flex-col">
                         <div class="w-28">
                             <span class="font-extrabold text-2xl">Tripp <span class="font-extrabold text-2xl text-orange-500">.</span></span>
                         </div>
-                        <div class="flex items-end">
+                        <div class="flex items-start max-md:flex-col">
                             <span class="mr-4">Copyright@Trip.All right reserved</span>
                             <div class="flex gap-2">
                                 <img src="/img/Icon.png" alt="google" class="p-2 bg-gray-400 rounded-full">
@@ -368,7 +421,7 @@
             </div>
         </div>
     </section>
-    <!-- end top visit -->
+    <!-- end footer -->
 
 </body>
 </html>
